@@ -1,6 +1,7 @@
 require "./card"
 require "./deck"
 
+Whole_card = Struct.new(:card, :value)
 two = Card.new("Two", 1)
 three = Card.new("Three", 2)
 four = Card.new("Four", 3)
@@ -18,6 +19,7 @@ a = Card.new("Ace", 13)
 deck = Deck.new("deck")
 deck.add_card(a)
 deck.add_card(two)
+deck.add_card(three)
 deck.add_card(four)
 deck.add_card(five)
 deck.add_card(six)
@@ -29,4 +31,5 @@ deck.add_card(j)
 deck.add_card(q)
 deck.add_card(k)
 
-puts deck
+deck.shuffle
+deck.compare

@@ -7,12 +7,8 @@ class Card
 		@value = value
 	end
 
-	def compare_cards()
-		
-	end
-
-	def tie_compare()
-		
+	def to_s
+		"#{card} | #{value}"
 	end
 
 end
